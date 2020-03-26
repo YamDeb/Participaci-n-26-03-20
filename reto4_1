@@ -1,0 +1,19 @@
+int x, y;
+
+void setup() {
+  size(200, 200); 
+  x = 10;
+  y = 10;
+}
+
+void draw() {
+  while (y < 200) {
+    x = 10;
+    while (x < 200) {
+      stroke(0, 0, random(255));
+      line(0, y, 200, y);
+      x = x + 10;
+    }
+    y = y + 10;
+  }
+}
